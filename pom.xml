@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -40,7 +41,9 @@
 		</developer>
 	</developers>
 	<contributors>
-		<contributor><name>None</name></contributor>
+		<contributor>
+			<name>None</name>
+		</contributor>
 	</contributors>
 
 	<scm>
@@ -78,6 +81,11 @@
 			<version>${dropwizard.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-multipart</artifactId>
+			<version>2.23.2</version>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
@@ -92,7 +100,7 @@
 				<configuration>
 					<licenseName>apache_v2</licenseName>
 					<organizationName>Board of Regents of the University of
-Wisconsin-Madison.</organizationName>
+						Wisconsin-Madison.</organizationName>
 					<projectName>ImageJ server for RESTful access to ImageJ.</projectName>
 				</configuration>
 			</plugin>

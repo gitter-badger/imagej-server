@@ -1,0 +1,9 @@
+# Logging settings.
+logging:
+  level: DEBUG
+  appenders:
+    - type: console
+      threshold: ALL
+      timeZone: UTC
+      target: stdout
+      logFormat: # TODO
